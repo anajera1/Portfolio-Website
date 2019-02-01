@@ -7,23 +7,6 @@ $(window).on("load", function() {
 
 
 
-
-$(document).ready(function () {
-    $('#slides').superslides({
-        animation:'fade',
-        play:5000, 
-        pagination: false
-    });
-    
-    var typed = new Typed(".typed", {
-        strings: ["Newbie user experience designer", "San Francisco based", "Pizza enthusiast"],
-        typeSpeed: 50,
-        loop: true,
-        startDelay: 1000,
-        showCursor: false
-    });
-});
-
 $(document).ready(function(){
      $(window).scroll(function () {
             if ($(this).scrollTop() > 50) {
