@@ -67,6 +67,48 @@ z-index:100;}
     color: #000;
 }
 
+.dropdown {
+  float: left;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  z-index: 150;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 150;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .navbar-toggler-icon {
     background: url(../img/icons/menu.png);
 background-size: 100%;}
@@ -146,20 +188,23 @@ body{font-family: 'Open Sans';}
     background-position: 0 100%;
     transition: background-size 0.25s ease-in;
 }
+
+
     
 
 /* overlay for projects index pg */
-.overlay{
-  position: absolute;
-  height: 400px;
-  top:0;
+
+.overlay {
+    position: absolute;
+    height: 400px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-  background: rgba(0, 0, 0, 1);
-  z-index: 2;
-  opacity: 0;
-  border-radius: 7px;
+    background: rgba(0, 0, 0, 1);
+    z-index: 2;
+    opacity: 0;
+    border-radius: 7px;
 }
 
 .overlay:hover{
@@ -191,6 +236,23 @@ body{font-family: 'Open Sans';}
 .section {
     padding:100px 0;
 }
+
+/* tripBuddy */
+.trip-hero .trip-hero-2 {
+    height: 600px;
+    position: relative;
+}
+
+.trip-cover.trip-cover_2 {
+    height: 650px;
+    background-size: cover;
+    position: relative;
+}
+
+#fh5co-project {
+    padding-bottom: 5em;
+} 
+
 
 /* ABOUT PAGE */
 
