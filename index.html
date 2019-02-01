@@ -28,30 +28,38 @@
 
 <!--Navigation Bar--> 
 <nav id="navigation" class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html">
+        <img src="img/Logo.png" alt="logo_initials" width="60%">
+    </a>
     
- 
-  <a class="navbar-brand" href="index.html">
-    <img src="img/Logo.png" alt="logo_initials" width="60%">
-  </a>
-   <div class="zoom">  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  </div>
+    <div class="zoom">  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
     
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a id="active-item" class="nav-link" href="index.html">Projects <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a id="nonactive-item1" class="nav-link" href="aboutme.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a id="nonactive-item2" class="nav-link" href="resume.html">Resume</a>
-      </li>
-    </ul>
-  </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+            <div class="dropdown">
+                <a id="active-item" class="nav-link" href="index.html" class="dropbtn"> Projects <span class="sr-only">(current)</span> 
+                </a>
+                    <div class="dropdown-content">
+                        <a href="equinox.html">Equinox</a>
+                        <a href="explore.html">Explore </a>
+                        <a href="idealab.html">Idea Lab</a>
+                        <a href="#">tripBuddy</a>
+                    </div>
+            </div>
+            </li>
+            <li class="nav-item">
+                <a id="nonactive-item1" class="nav-link" href="aboutme.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a id="nonactive-item2" class="nav-link" href="resume.html">Resume</a>
+            </li>
+        </ul>
+    </div>
     
 </nav>
 <!--Header Slides--> 
@@ -96,7 +104,7 @@
         </div>
     </div>
     <div class="col-md-5 col-sm-5">
-        <div class="fh5co-grid animate-box" style="background-image: url(img/explore/explorethumnail2@2x.png);">
+        <div class="fh5co-grid animate-box" style="background-image: url(img/explore/exploreThumnail2@2x.png);">
             <a href="explore.html">
                 <div class="overlay">
                     <h3>Explore - Event finding app</h3>

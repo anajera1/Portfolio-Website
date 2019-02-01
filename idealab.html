@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Anamaria Najera - Portfolio</title>
+    <title>Reach Idea Lab - Anamaria Najera</title>
     <meta name="description" content="Portfolio and personal website of Anamaria Najera">
     <meta name="keywords" content="anamarianajera, anamaria, najera, babson, anamaria najera,">
     
@@ -46,7 +46,6 @@
         color:#80CBC4;
         margin-bottom: 5px;
         margin-top: 50px; 
-        font-weight: 100;
         letter-spacing: 1px;
         font-size: 28px;
     }
@@ -247,29 +246,35 @@
 
 <!--Navigation Bar--> 
 <nav id="navigation" class="navbar navbar-expand-lg">
-    
     <a class="navbar-brand" href="index.html">
-        <img src="img/Logo.png" alt="logo_initials" width=60%>
+        <img src="img/Logo.png" alt="logo_initials" width="60%">
     </a>
     
     <div class="zoom">  
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
     </div>
     
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-            <a id="active-item" class="nav-link" href="index.html">Projects <span class="sr-only">(current)</span></a>
+            <div class="dropdown">
+                <a id="active-item" class="nav-link" href="index.html" class="dropbtn"> Projects <span class="sr-only">(current)</span> 
+                </a>
+                    <div class="dropdown-content">
+                        <a href="equinox.html">Equinox</a>
+                        <a href="explore.html">Explore </a>
+                        <a href="idealab.html">Idea Lab</a>
+                        <a href="#">tripBuddy</a>
+                    </div>
+            </div>
             </li>
-            
             <li class="nav-item">
-            <a id="nonactive-item1" class="nav-link" href="aboutme.html">About</a>
+                <a id="nonactive-item1" class="nav-link" href="aboutme.html">About</a>
             </li>
-            
             <li class="nav-item">
-            <a id="nonactive-item2" class="nav-link" href="resume.html">Resume</a>
+                <a id="nonactive-item2" class="nav-link" href="resume.html">Resume</a>
             </li>
         </ul>
     </div>
