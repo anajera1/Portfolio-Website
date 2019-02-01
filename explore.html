@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Anamaria Najera - Portfolio</title>
+    <meta name="description" content="Portfolio and personal website of Anamaria Najera">
+    <meta name="keywords" content="anamarianajera, anamaria, najera, babson, anamaria najera">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/superslides.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <link rel="icon" type="image/png" href="img/pizza-emoji.png">
+
+    
+<style>
+    
+    div#expand{display: block;}  
+
+    #glanceMainHeader, .glanceHeader, #prototypeMainHeader, .researchHeader, #reflectionMainHeader  {
+        color: #5887F9;}
+
+    #prototypeMainHeader {
+        margin-bottom: 10px;
+    }
+
+    #reflectionMainHeader {
+       margin-top: 50px;
+    }
+
+    .content {display: -webkit-box; display: -moz-box; display: -ms-flexbox;
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction : column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: center; 
+      justify-content: center; 
+      position: absolute;
+      top: 0; bottom: 40; left: 30px; right: 30px;
+    }
+
+    @media only screen and (max-width: 576px) {
+
+        .container {
+            margin-top:250px;
+        }
+        .content {
+            position: absolute;
+             top: 10px; 
+            /*bottom: 0; left: 0; right: 0;*/
+            padding: 10px;
+        }
+        .explore_title{
+             color: #000; 
+            position: relative;
+        text-transform:uppercase;
+        font-weight: 200;
+        font-size: 28px;
+        letter-spacing: 1px;
+        }
+
+        .explore_subText{
+            position:relative;
+            margin-top:0;
+            font-size: 16px;
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+        .explore_projdescription{
+            position: relative;
+            margin-top:0;
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-weight: 200;
+        } 
+    }
+
+    @media only screen and (min-width: 768px) {
+    .container {
+         margin-top:150px;
+        }
+        .content {
+             position: absolute;
+             top: 10px; 
+            /*bottom: 0; left: 0; right: 0;*/
+            padding: 10px;
+
+        }
+        .explore_title{
+        color: #000; 
+        position: relative;
+        text-transform:uppercase;
+        font-weight: 200;
+        font-size: 38px;
+        letter-spacing: 1px; 
+        }
+
+        .explore_subText{
+               position:relative;
+            margin-top:0;
+            font-size: 16px;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+        .explore_projdescription{
+             position: relative;
+            margin-top:0;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+    }
+
+    @media only screen and (min-width: 992px) {
+    .container {
+            margin-top:150px;
+        }
+        .content {
+             margin-top:100px;
+
+        }
+        .explore_title{
+        text-transform: uppercase;
+        font-weight: 200;  
+        font-size: 48px;
+        letter-spacing: 1px;
+        position: relative;
+        }
+
+        .explore_subText{
+        color: #000;
+        font-weight: 200;
+        font-size: 20px;
+        letter-spacing: 1px;
+        position: relative;
+        }
+        .explore_projdescription{
+        color: #000;
+        font-weight: 200;
+        font-size: 18px;
+        letter-spacing: 1px;
+        position: relative;
+        }
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .container {
+        margin-top:150px;
+        }
+        .content {
+         margin-bottom: 10px;    
+        z-index: 10px;
+        }
+        .explore_title{
+        color: #000; 
+        text-transform:uppercase;
+        font-weight: 200;
+        font-size: 48px;
+        letter-spacing: 1px; 
+        }
+
+        .explore_subText{
+        color: #000; 
+        font-weight: 200;
+        font-size:20px;
+        letter-spacing: 1px;
+        }
+
+        .explore_projdescription{
+        color:#000;
+        font-weight: 200;
+        font-size: 18px; 
+        letter-spacing: 1px;
+        }
+
+    }
+
+    .onboarding {margin-top: 50px;}
+
+    .reflection {margin-bottom: 50px;}
+    
+</style>
+    
+</head>
+        
+<body>
+    
+
+<!--Loader -->
+<div class="loader"> 
+    <div class="inner"></div>
+</div>
+
+
+<!--Navigation Bar--> 
+<nav id="navigation" class="navbar navbar-expand-lg">
+    
+    <a class="navbar-brand" href="index.html">
+        <img src="img/Logo.png" alt="logo_initials" width=60%>
+    </a>
+    
+    <div class="zoom">  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+            <a id="active-item" class="nav-link" href="index.html">Projects <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item">
+            <a id="nonactive-item1" class="nav-link" href="aboutme.html">About</a>
+            </li>
+            
+            <li class="nav-item">
+            <a id="nonactive-item2" class="nav-link" href="#">Resume</a>
+            </li>
+        </ul>
+    </div>
+    
+</nav>
+
+<!--Content-->
+
+<div class="container-fluid">
+
+<div class="ml-lg-5 mr-lg-5 d-xl-0"> 
+
+
+<div class="row"> 
+       <div class="col-lg-2"></div>
+    
+       <div class="col-lg-8"> 
+        <div class="content">
+             <h1 class="explore_title">Explore</h1> 
+             <p class="explore_subText">Easiest way to search for the best events happening in your city.</p>
+             <p class="explore_projdescription"> / Mobile App Design</p>
+        </div> 
+        </div>
+        <div class="col-lg-2"></div>
+</div> 
+    
+
+<div class="row" > 
+    <div class="col-lg-4"></div>
+    <div class="col-lg-8">
+    <div class="container">
+     <img src="img/explore/exploreHeader16.png" width=100%;> 
+    </div> 
+     
+</div> 
+</div> 
+
+    
+</div>
+
+</div> 
+  
+<!--at a glance section-->
+<div class="container-fluid">
+<div class="ml-lg-5 mr-lg-5 d-xl-0 atGlance"> 
+
+<!--at a glance header-->
+<div class="row">
+    
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8">
+        <h1 id=glanceMainHeader> At a Glance </h1>
+    </div>
+    
+    <div class="col-lg-2"></div>  
+    
+</div> 
+
+<!--at a glance simple info-->
+<div class="row"> 
+    
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+        <div class="row"> 
+            <div class="apps col-sm-4">
+            <p class= "glanceHeader">Timeframe </p> 
+              <p> August 2018</p>
+            </div>
+            
+            <div class="apps col-sm-4">
+                <p class="glanceHeader">Tools </p>
+                <p>Figma</p>
+            </div>
+            
+            <div class="apps col-sm-4">
+            <p class="glanceHeader">Role </p>
+               <p> Researching, Designing, and Prototyping (Individual Project)</p> <!--Edit this line-->
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-2"></div>
+    
+</div>
+ <br>
+    
+<!--at a glance project info-->
+<div class="row">
+    
+<div class="col-lg-2"></div>
+    
+<div class="col-lg-8">
+    <div id="projInfo_Explore">
+    
+    
+    <p class="glanceHeader">Task </p>
+    <p> Design a seamless app experience for both Eventgoers and Tastemakers by creating an app whose events are populated entirely by “tastemakers”, people who have connections to the world of underground art, dining, and music.</p>
+        
+    <br>
+    
+    <p class="glanceHeader">Deliverables</p>
+    <p>A styleguide and clickable prototype.</p>
+    
+        
+    <br>
+    
+    <p class="glanceHeader">Project Constraints</p>
+        <ul>
+            <li>Users must be able to sign up quickly via Google or Facebook authorization</li>
+            <li>Users must be able to sort and find events by city, neighborhood, date, type (food, music, etc.), ambiance, price</li>
+            <li>Event detail pages must include image galleries, descriptions, link to website, Add to Calendar button, Share button, RSVP button (connects to Facebook), Save, and a More Details section</li>
+            <li>Tastemaker onboarding process must allow for 30+ question quiz</li>
+        </ul>   
+    </div>
+</div>
+    
+<div class="col-lg-2"></div>
+    
+</div>
+    
+</div>
+
+
+
+<!--research section-->
+  
+<div class="ml-lg-5 mr-lg-5 d-xl-0 research">
+<div class="row"> 
+    
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8">
+    <input id="toggle" type="checkbox" checked> 
+    <label for="toggle"></label>
+        <div id="expand">
+        
+        <section>
+        <h1 class="researchHeader"> Competitive Analysis </h1>
+        <p>The heuristic analysis helped me determine what features other events apps are using: Which of them work? How do they make them work? Which don’t work and why not? </p>
+        
+        <br> 
+        <p class="compHeader">Time Out</p>
+        <img src="img/explore/timeout.png" width="100%" height="100%" alt="Time Out">  
+        
+        <br> 
+       
+        <p class="compHeader comp2">Eventbrite</p>
+        <img src=img/explore/eventbrite.png width="100%" height="100%" alt="Eventbrite">
+        
+        <p class="compHeader comp2">Gravy</p>
+        <img src=img/explore/gravy.png width="100%" height="100%" alt="Gravy">
+        </section>
+        
+        
+        <section>
+        <h1 class="researchHeader"> Persona </h1>
+        <img src=img/explore/persona.png width="100%" height="100%" alt="Jess Shepard Persona">
+        </section>
+        
+        <section>
+        <h1 class="researchHeader"> Design Opportunities </h1>
+        <img src=img/explore/design_opportunities.png width="100%" height="100%" alt="Research Design Opportunities">
+        </section>
+        </div>
+        
+    </div>
+    
+    <div class="col-lg-2"></div>
+</div>
+</div>
+    
+    
+<!--style guide--> 
+<div class="ml-lg-5 mr-lg-5 d-xl-0 styleguide">
+<div class="row"> 
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8">
+        <h1 id=styleMainHeader> UI Style Guide</h1>
+        <img src="img/explore/style_guide.png" alt="UI Styleguide" width="100%"> 
+    </div>
+    
+    <div class="col-lg-2"></div>
+    
+</div>
+      
+</div>    
+
+    
+
+<!--final prototype--> 
+<div class="ml-lg-5 mr-lg-5 d-xl-0 prototype">
+<div class="row">
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+    <h1 id="prototypeMainHeader"> Outcome </h1>
+    <p> Explore was designed to improve the experience of finding the best events in your city, built with a simple interface, quick sign up/booking process, and top quality events posted only by tastemakers. All in order to make sure users can continue exploring their cities and doing what they love.</p>
+    
+    <p> Below are some of the features produced using figma and feedback from my peers. </p>
+    </div>
+    
+    <div class="col-lg-2"></div>
+    
+</div>
+    
+
+<div class="row"> 
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+        <div class="row onboarding">
+           <div class="col-lg-5">
+             <h1 id="onboardingHeader">1/ Quick and personalized onboarding process</h1>
+             <p> Having a personalized onboarding process ensures that the events shown are to the users liking, encouraging them to continue using Explore.</p>
+           </div>
+           <div class="col-lg-7">
+                <div style="padding:105.93% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290526241" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+           </div>
+    
+        </div>
+
+    </div>
+    
+    <div class="col-lg-2"></div>
+</div>    
+    
+<div class="row"> 
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+        <div class="row onboarding">
+           <div class="col-lg-5">
+             <h1 id="onboardingHeader">2/ Tastemakers onboarding</h1>
+             <p> Tastemakers have to go through a longer onboarding process which involves a 30 question questionnaire, to ensure that they are qualified to post great events. Tastemakers also have the option to look at events already posted and have a regular account as well, so they can attend events too.</p>
+           </div>
+           <div class="col-lg-7">
+                <div style="padding:115.93% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290533052" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+           </div>
+    
+        </div>
+
+    </div>
+    
+    <div class="col-lg-2"></div>
+</div>  
+    
+<div class="row"> 
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+        <div class="row onboarding">
+           <div class="col-lg-5">
+             <h1 id="onboardingHeader">3/ Event Booking</h1>
+             <p> The event description screen is meant to ensure that the user has all the information they need to decide if they want to attend the event. Users also have the option to click "Going" which connects to their Facebook account and serves as another way to share the event with friends.</p> 
+            <p> Users also have the option to click into the profile of the tastemaker who posted the event to find more events that they've posted.</p> 
+            <p> I also added the option to directly call an Uber to the event and check out directions to the event on Google Maps, because through my research I found that these are the most commonly used apps for transportation. </p>  
+           </div>
+           <div class="col-lg-7">
+                <div style="padding:116.11% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290536464" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+           </div>
+    
+        </div>
+
+    </div>
+    
+    <div class="col-lg-2"></div>
+</div>  
+
+<div class="row"> 
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+        <div class="row onboarding">
+           <div class="col-lg-5">
+             <h1 id="onboardingHeader">4/ Additional Screens </h1>
+             <p> <Strong> People </Strong> </p> 
+               <p> In this screen users can track which tastemakers they are following and find more to follow. Following more tastemakers further personalizes their experience and ensures that they won't be overwhelmed by a random list of events that doesn't cater to their interests. </p> 
+            
+               <p> <strong> Settings </strong> </p> <p> Two features I want to call out include 'Enable Notifications' and 'Saved Cards'. With 'Enable Notifications', users can have the option to get reminders of their upcoming events and reminders about deadlines to book an event they saved. With 'Saved Cards', users can save their credit card information so the next time they book an event the process is a lot faster.</p> 
+               
+    
+           </div>
+           <div class="col-lg-7">
+                <div style="padding:124.63% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290540288" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+           </div>
+    
+        </div>
+
+    </div>
+    
+    <div class="col-lg-2"></div>
+</div>  
+    
+</div>
+    
+<!--reflection--> 
+
+<div class="ml-lg-5 mr-lg-5 d-xl-0 reflection">
+<div class="row">
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+    <h1 id="reflectionMainHeader"> Reflection </h1>
+
+    <p> <strong>Product Impact </strong> </p>
+    <p> Even though there are a few design tweaks I would make, I am proud of how the app turned out. The interface is clean and easy to use which will give the users a seamless experience.</p>
+    
+    <p> <strong>Improvements </strong> </p>
+    <p>For this project I should have spent more time researching for the tastemaker's experience. Most of my research was for the eventgoer and when I was designing the app I placed more priority on their experience. In the future I would conduct more research on tastemakers since they are also important users.</p>
+
+    </div>
+    
+    <div class="col-lg-2"></div>
+    
+</div>
+</div>
+
+    
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-toggle="tooltip" data-placement="left"> <img src="img/icons/uparrow.png" width=50%>
+    <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+	    
+</div>  <!--Div to close container fluid--> 
+    
+<!--Copyright Section-->  
+
+    <div class="copyrightSection">
+           <div class="col-md-12 text-center">
+            <p id="copy"> Thanks for exploring this far. </p> <br>
+            <p id="copyright_text"> &copy; Made with ♥️ by Anamaria Najera 2018</p>
+            <br>
+             <a href="https://www.linkedin.com/in/anamarianajera/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/anamarianajera/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/anamaria_najera?lang=en" class="fa fa-twitter"></a>
+        </div>
+    </div>  
+    
+<!--End of Copyright Section-->
+    
+<!--Java script-->
+<script src="js/typed.min.js"></script>   
+<script src="js/jquery.superslides.min.js"></script>   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+<script src="js/script.js"></script>  
+    
+</body> 
+</html>

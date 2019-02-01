@@ -1,0 +1,586 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anamaria Najera - Portfolio</title>
+    <meta name="description" content="Portfolio and personal website of Anamaria Najera">
+    <meta name="keywords" content="anamarianajera, anamaria, najera, babson, anamaria najera,">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/superslides.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <link rel="icon" type="image/png" href="img/pizza-emoji.png">
+    
+<style>
+        
+    div#expand{display: block;}        
+
+    .mySlides {display:none}
+    
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 67%;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    }
+
+    .next {
+      right: 0;
+      margin-right: 30px;
+    }
+
+    #prototypeMainHeader {
+        color:#80CBC4;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+        
+    #prototypeMainHeader4 {
+        color:#80CBC4;
+        margin-bottom: 5px;
+        margin-top: 50px; 
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: 28px;
+    }
+
+    .glanceHeader, #glanceMainHeader, #researchMainHeader  {
+         color:#80CBC4;       
+    }
+
+
+
+    #prototypesubHeader, #prototypesubHeader1{
+        color:#80CBC4; margin-bottom: 20px; 
+    }
+
+    #prototypesubHeader1{
+        margin-top: 10px;
+    }
+
+    .reflection, #reachsubHeader{
+        margin-bottom: 50px;
+    }
+
+    .addGoal {
+        margin-top: 40px;
+    }
+
+
+    .gamified {
+        margin-top: 50px;
+    }
+
+
+    hr {color:#6F6F6F; width: 500px; border-width: 2px; margin-top: 50px;}
+    
+    .content {display: -webkit-box; display: -moz-box; display: -ms-flexbox;
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction : column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: center; 
+      justify-content: center; 
+      position: absolute;
+      top: 0; bottom: 40; left: 30px; right: 30px;
+    }
+
+    @media only screen and (max-width: 576px) {
+
+        .container {
+            margin-top:250px;
+        }
+        .content {
+            position: absolute;
+            /*bottom: 0; left: 0; right: 0;*/
+            padding: 10px;
+            margin-top: 40px;
+        }
+        .Idea_title{
+            color: #000; 
+            position: relative;
+            text-transform:uppercase;
+            font-weight: 200;
+            font-size: 28px;
+            letter-spacing: 1px; 
+        }
+
+        .Idea_subText{
+            position:relative;
+            margin-top:10px;
+            font-size: 16px;
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+        .Idea_projdescription{
+            position: relative;
+            margin-top:0;
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-weight: 200;
+        } 
+    }
+
+    @media only screen and (min-width: 768px) {
+    
+        .container {
+            margin-top:150px;
+        }
+        .content {
+             position: absolute;
+             top: 10px; 
+            /*bottom: 0; left: 0; right: 0;*/
+            padding: 10px;
+
+        }
+        .Idea_title{
+            color: #000; 
+            position: relative;
+            text-transform:uppercase;
+            font-weight: 200;
+            font-size: 38px;
+            letter-spacing: 1px; 
+        }
+
+        .Idea_subText{
+            position:relative;
+            margin-top:0;
+            font-size: 16px;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+        .Idea_projdescription{
+            position: relative;
+            margin-top:0;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+    }
+
+    @media only screen and (min-width: 992px) {
+        
+        .container {
+            margin-top:150px;
+        }
+        .content {
+             margin-top:100px;
+        }
+        
+        .Idea_title{
+            text-transform: uppercase;
+            font-weight: 200;  
+            font-size: 48px;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .Idea_subText{
+            color: #000;
+            font-weight: 200;
+            font-size: 23px;
+            letter-spacing: 1px;
+            position: relative;
+        }
+        .Idea_projdescription{
+            color: #000;
+            font-weight: 200;
+            font-size: 16px;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+        
+        .container {
+            margin-top:150px;
+        }
+        .content {
+            margin-bottom: 10px;    
+            z-index: 10px;
+        }
+        .Idea_title{
+            color: #000; 
+            text-transform:uppercase;
+            font-weight: 200;
+            font-size: 48px;
+            letter-spacing: 1px; 
+        }
+
+        .Idea_subText{
+            color: #000; 
+            font-weight: 200;
+            font-size:23px;
+            letter-spacing: 1px;
+        }
+
+        .Idea_projdescription{
+            color:#000;
+            font-weight: 200;
+            font-size: 16px; 
+            letter-spacing: 1px;
+        }
+
+    }
+    
+</style>
+</head>
+        
+<body>
+
+<!--Loader-->
+
+<div class="loader"> 
+    <div class="inner"></div>
+</div>
+
+<!--Navigation Bar--> 
+<nav id="navigation" class="navbar navbar-expand-lg">
+    
+    <a class="navbar-brand" href="index.html">
+        <img src="img/Logo.png" alt="logo_initials" width=60%>
+    </a>
+    
+    <div class="zoom">  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+            <a id="active-item" class="nav-link" href="index.html">Projects <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item">
+            <a id="nonactive-item1" class="nav-link" href="aboutme.html">About</a>
+            </li>
+            
+            <li class="nav-item">
+            <a id="nonactive-item2" class="nav-link" href="#">Resume</a>
+            </li>
+        </ul>
+    </div>
+    
+</nav>
+
+<!--Content-->
+
+<div class="container-fluid">
+<div class="ml-lg-5 mr-lg-5 d-xl-0"> 
+
+<div class="row">
+    <div class="col-lg-2"></div> 
+    
+    <div class="col-lg-8">
+       <div class="content">
+             <h1 class="Idea_title">EY's Idea Lab Challenge - Reach</h1> 
+             <p class="Idea_subText">A collaborative way to save up your big adventures</p>
+             <p class="Idea_projdescription"> / Mobile App Design</p>
+       </div>    
+    </div>
+    
+    <div class="col-lg-2"></div>    
+</div>
+    
+<div class="row" > 
+    <div class="col-lg-4"></div>
+    
+    <div class="col-lg-8">
+        <div class="container">
+            <img src="img/idealab/idealabPhone.png" width=100%;> 
+        </div> 
+    </div> 
+    
+</div> 
+    
+</div>
+</div>
+    
+<!--at a glance section-->
+<div class="container-fluid">
+<div class="ml-lg-5 mr-lg-5 d-xl-0 atGlance"> 
+
+<!--at a glance header-->
+<div class="row">
+    
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8">
+        <h1 id=glanceMainHeader> At a Glance </h1>
+    </div>
+    
+    <div class="col-lg-2"></div>  
+    
+</div> 
+
+<!--at a glance simple info-->
+<div class="row"> 
+    
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+        <div class="row"> 
+            <div class="apps col-sm-4">
+            <p class= "glanceHeader">Timeframe </p> 
+              <p> October - December 2017</p>
+            </div>
+            
+            <div class="apps col-sm-4">
+                <p class="glanceHeader">Team </p>
+                <p>Anamaria Najera, Sam Cicconi, Sofia De Luise, Ben Yaholomi </p>
+            </div>
+            
+            <div class="apps col-sm-4">
+            <p class="glanceHeader">Role </p>
+               <p> Researching and Designing</p> <!--Edit this line-->
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-2"></div>
+    
+</div>
+
+
+<!--at a glance project info-->
+<div class="row">
+    
+<div class="col-lg-2"></div>
+    
+<div class="col-lg-8">
+    <div id="projInfo_Idea">
+        <p class="glanceHeader">The Challenge</p>
+        <p>In the fall I joined a UX design competition (Idea Lab Challenge) that my employer, EY, was having. For the Idea Lab Challenge 19 teams based across the US and internationally competed to solve for one of two problem statements for one of EY’s Financial Services clients (not allowed to name). Since my team and I wanted to have more flexibility with our solution, we chose to tackle the problem statement: <br> </p>
+        <p id="glanceIdea"> How might we be present for Life’s Biggest Moments?  </p>
+
+        <br>
+        <p class="glanceHeader">Task </p>
+        <ul> 
+                <li>Design an experience that makes our client top of mind when their customers are thinking about financing important life moments. </li>
+                <li>Deliver a clickable prototype to demonstrate our final solution.</li>
+
+        </ul>  
+        <br>
+    </div>
+</div>
+    
+<div class="col-lg-2"></div>
+    
+</div>
+    
+</div>
+
+
+
+<!--research section-->
+  
+<div class="ml-lg-5 mr-lg-5 d-xl-0 research research_idea">
+<div class="row"> 
+    
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8">
+    <h1 id="researchMainHeader"> Research </h1>
+        
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="./img/idealab/research_1.png" style="width:100%">
+            <img class="mySlides" src="./img/idealab/research_2.png" style="width:100%">
+            <img class="mySlides" src="./img/idealab/research_3.png" style="width:100%">
+            <img class="mySlides" src="./img/idealab/research_4.png" style="width:100%">
+            <img class="mySlides" src="./img/idealab/research_5.png" style="width:100%">
+            <img class="mySlides" src="./img/idealab/research_6.png" style="width:100%">
+        
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>   
+  
+        </div>
+    
+    <div class="col-lg-2"></div>
+</div>
+</div>
+    
+<hr>
+    
+<!--outcome--> 
+<div class="ml-lg-5 mr-lg-5 d-xl-0 prototype">
+<div class="row">
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+    <h1 id="prototypeMainHeader"> Outcome </h1>
+        <p>After going through the research process we came out with a sub problem statment: How can we help customers <strong>save</strong> towards life’s biggest moments and <strong> share </strong> those moments with the ones they love? Through our research we learned that the customers we were designing for are experience oriented and have a desire to save but don’t want to sacrifice having fun. </p>
+
+        <p>This realization about our clients led us to our solution: <strong>REACH, a mobile app that provides customers with a gamified collaborative experience to save for goals with their friends/family.</strong></p>
+
+        <p>The focus when designing REACH was to create an experience for users that was simple, functional, and visaully appealing while maintaining our client’s brand identity. </p>
+    </div>
+    
+    <div class="col-lg-2"></div>
+    
+</div>
+</div>
+
+<hr>
+    
+<!--reach app breakdown--> 
+<div class="ml-lg-5 mr-lg-5 d-xl-0 prototype">
+<div class="row">
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+        <h1 id="prototypeMainHeader4"> Reach </h1>
+        <p id="reachsubHeader"> Below are clickable prototypes made using Figma with a breakdown of how Reach works. </p>
+
+    </div>
+    
+    <div class="col-lg-2"></div>
+    
+</div>
+
+<div class="row"> 
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+        <div class="row">
+           <div class="col-lg-5">
+             <h1 id="prototypesubHeader1">1/ Easily accessible</h1>
+             <p> We wanted to avoid making customers download a new app, so instead we added REACH as a new component to the client’s existing app. </p>
+             <p> REACH will have a very easy entry-point from the client’s home tab. The premier location and pop up will give this new feature enough exposure to increase customer usage quickly. </p>
+           </div>
+           <div class="col-lg-7">
+              <div style="padding:117.04% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290568702" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+           </div>   
+        </div>
+    </div>
+    
+    
+    <div class="col-lg-2"></div>
+</div>
+    
+<div class="row addGoal"> 
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+        <div class="row">
+           <div class="col-lg-5" >
+             <h1 id="prototypesubHeader">2/ Adding a new goal</h1>
+             <p> Our interface makes the process of adding a new goal fun and simple. </p>
+             <p> <strong>What’s your goal?</strong>  </p>
+             <p>For this question, we decided to not have a dropdown with goals to choose from, such as "Vacation" because we wanted the user to be able personalize their goal. We also put an example below so the user is encouraged to type a more descriptive goal. </p>
+               
+               <p> <strong> Tell us more about your goal: </strong></p>
+               <p> We added images to this screen to make it fun and so the user does not have to type in too much thoughout this process. </p>
+               <p>The images are generated using our client’s ability to detect key words from the previous question. Which is why the pictures are of activites people might do in Greece. </p>
+               
+               <p> <strong>How will you save? </strong></p>
+                <p>  For this screen we decided to only add two possible rules for saving because we wanted to make it as simple as possible. Also we added sub text to explain how it works. </p>
+           </div>
+           <div class="col-lg-7 goalPrototype">
+            <div style="padding:128.7% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290568738" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+    
+        </div>
+
+    </div>
+    
+    
+    <div class="col-lg-2"></div>
+
+</div>
+    
+<div class="row"> 
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8 gamified"> 
+        <div class="row">
+           <div class="col-lg-5">
+             <h1 id="prototypesubHeader">3/ Gamified colloborative experience</h1>
+             <p> <strong> Activity Dashboard</strong></p>
+             <p> On this screen users can easily track their progress as well their friends. We added a dashboard to show the gamified aspect of the app since everyone’s progress is public - which can encourage fun competition as well as motivate everyone to save more towards the goal. </p>
+             <p>The tracker in the bottom shows the group’s progress. We added this feature as a reminder that reaching their goal is a group effort. </p>
+               
+             <p> <strong>Rewards Dashboard </strong>  </p>
+             <p>  This screen serves as an another incentive for users to save. As the group makes more progress towards reaching their goal, they receive team challenges to help them get there faster. </p>
+             <p> The companies selected for the challenges have partnerships with our client, benefiting both our client and their partners.</p>
+            <p>Users also receive invidual rewards that are personalized based on their shopping history, serving as another incentive to spend and save more. </p>
+           </div>
+           <div class="col-lg-7 goalPrototype">
+              <div style="padding:112.96% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/290568789" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-2"></div>
+
+</div>
+    
+    
+</div>
+    
+<hr> 
+    
+<!--refelction--> 
+<div class="ml-lg-5 mr-lg-5 d-xl-0 reflection">
+<div class="row">
+    <div class="col-lg-2"></div>
+    
+    <div class="col-lg-8"> 
+    <h1 id="prototypeMainHeader"> Reflection </h1>
+    <p> <strong>Product Impact </strong> </p>
+    <p>REACH satisfies both the business needs of our client and the needs of their users. Our client wanted to find a way to connect with their users and be a part of their special moments. Their users appreciate companies that try to form connections with them and give them the best rewards. </p>
+    
+    <p> <strong>Improvements </strong> </p>
+    <p>In this design, due to the time limit, a lot of our decisions and assumptions were made based on several interviews and secondary research. In the future I would conduct more usuability tests to get solid insights and feedback. Do users like to measure their progress against their group or do they want more privacy? Should users have more of a say on what rewards they are receiving? Was the onboarding process simple? Are there other features users would like to see?  </p>
+
+    </div>
+    
+    <div class="col-lg-2"></div>
+    
+</div>
+</div>
+
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-toggle="tooltip" data-placement="left"> <img src="img/icons/uparrow.png" width=50%>
+    <span class="glyphicon glyphicon-chevron-up"></span>
+</a>
+    
+</div>  <!--Div to close container fluid--> 
+    
+<!--Copyright Section-->  
+
+    <div class="copyrightSection">
+            <div class="col-md-12 text-center">
+            <p id="copy"> Thanks for exploring this far. </p> <br>
+            <p id="copyright_text"> &copy; Made with ♥️ by Anamaria Najera 2018</p>
+            <br>
+             <a href="https://www.linkedin.com/in/anamarianajera/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/anamarianajera/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/anamaria_najera?lang=en" class="fa fa-twitter"></a>
+            </div>
+    </div>
+    
+<!--End of Copyright Section--> 
+
+<!--Java script-->
+<script src="js/typed.min.js"></script>   
+<script src="js/jquery.superslides.min.js"></script>   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+<script src="js/script.js"></script>  
+    
+</body> 
+</html>
